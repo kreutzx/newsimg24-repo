@@ -5,7 +5,7 @@
 [![reward](https://make.fun/badge/news-image-20261124/kreutzx/newsimg24-repo/reward.svg)](https://make.fun/bounty/news-image-20261124?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261124)
 
 A dense, sourced newspaper front page summing up Tuesday 24 November 2026
-in one image: **36 stories, 13 drawn, UTC timeline — 24 November 2026**.
+in one image: **36 stories, 16 drawn, UTC timeline — 24 November 2026**.
 
 ## What is on the page
 

@@ -333,7 +333,7 @@ SHORT_KICKER = {"WORLD": "WORLD", "MONEY & TECH": "MONEY",
 def draw_card(d, x, y, w, h, sec, headline, deck, source, cert, icon):
     d.rectangle([x, y, x + w, y + h], fill=PAPER, outline=(200, 192, 172))
     tx = x + 8
-    if icon:
+    if icon and icon in ICONS:
         draw_icon(d, icon, x + 8, y + 8, 46)
         tx = x + 62
         tw = w - 70
