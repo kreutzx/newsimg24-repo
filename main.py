@@ -4,6 +4,8 @@ Renders "THE WORLD IN ONE DAY" — a dense, sourced newspaper front page
 summing up Tuesday 24 November 2026 — deterministically with PIL and
 writes it to $MAKEFUN_OUTPUT_DIR/entry.png (default /output/entry.png).
 No network, no clock, fixed seed: two runs produce byte-identical PNGs.
+Fonts are vendored in ./fonts (same Noto files the image was built with),
+so the pinned grader image needs no system fonts installed.
 The image is validated before it is written: PNG magic, 1 MiB cap,
 1024x1024 canvas, and a second render must match byte for byte.
 """
@@ -32,7 +34,7 @@ LIGHT = (232, 226, 212)
 BLUE = (43, 88, 140)
 GREEN = (46, 110, 62)
 
-FD = "/usr/share/fonts/truetype/noto"
+FD = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fonts")
 
 
 def _f(name, size):
